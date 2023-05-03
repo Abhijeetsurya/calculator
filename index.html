@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #main{
+        width: 300px;
+        height: 280px;
+        background-color: black;
+        }
+
+        input{
+        width: 20%;
+        height: 40px;
+        font-size: 15px;
+        margin: 5px;
+        }
+
+        #screen{
+            width: 94%; 
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form name="form">
+            <input type="text" name="ddd" placeholder="0" id="screen"> <br>
+            <input type="button" value="1" onclick="form.ddd.value+=1">
+            <input type="button" value="2" onclick="form.ddd.value+=2">
+            <input type="button" value="3" onclick="form.ddd.value+=3">
+            <input type="button" value="+" onclick="add()">
+            <br>
+            <input type="button" value="4" onclick="form.ddd.value+=4">
+            <input type="button" value="5" onclick="form.ddd.value+=5">
+            <input type="button" value="6" onclick="form.ddd.value+=6">
+            <input type="button" value="-" onclick="sub()">
+            <br>
+            <input type="button" value="7" onclick="form.ddd.value+=7">
+            <input type="button" value="8" onclick="form.ddd.value+=8">
+            <input type="button" value="9" onclick="form.ddd.value+=9">
+            <input type="button" value="/" onclick="div()">
+            <br>
+            <input type="button" value="c" onclick="form.ddd.value=''">
+            <input type="button" value="0" onclick="form.ddd.value+=0">
+            <input type="button" value="=" onclick="form.ddd.value=eval(form.ddd.value)">
+            <input type="button" value="x" onclick="mul()">
+        </form>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
